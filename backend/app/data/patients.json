@@ -1,0 +1,91 @@
+{
+    "patients": [
+      {
+        "patient_id": "PT_001",
+        "name": "Maria Lopez",
+        "room": "308",
+        "ssn": "123-45-6789",
+        "mrn": "MRN789456123",
+        "dob": "1985-03-15",
+        "phone": "555-123-4567",
+        "address": "123 Oak Street, Los Angeles, CA 90210",
+        "insurance": {
+          "provider": "Blue Cross Blue Shield",
+          "policy_number": "BC789456123",
+          "group_number": "GRP001"
+        },
+        "vitals": {
+          "blood_pressure": "120/80",
+          "heart_rate": "72 bpm",
+          "temperature": "98.6°F",
+          "oxygen_saturation": "98%",
+          "last_updated": "2024-01-15T10:30:00Z"
+        },
+        "medical_history": {
+          "allergies": ["Penicillin", "Shellfish"],
+          "conditions": ["Hypertension", "Type 2 Diabetes"],
+          "medications": ["Metformin 500mg", "Lisinopril 10mg"]
+        },
+        "admission_date": "2024-01-14",
+        "attending_physician": "Dr. Sarah Chen"
+      },
+      {
+        "patient_id": "PT_002", 
+        "name": "John Williams",
+        "room": "205",
+        "ssn": "987-65-4321",
+        "mrn": "MRN456789012",
+        "dob": "1978-08-22",
+        "phone": "555-987-6543",
+        "address": "456 Pine Ave, San Francisco, CA 94102",
+        "insurance": {
+          "provider": "Aetna",
+          "policy_number": "AET456789",
+          "group_number": "GRP002"
+        },
+        "vitals": {
+          "blood_pressure": "140/90",
+          "heart_rate": "85 bpm", 
+          "temperature": "99.2°F",
+          "oxygen_saturation": "96%",
+          "last_updated": "2024-01-15T09:15:00Z"
+        },
+        "medical_history": {
+          "allergies": ["Latex"],
+          "conditions": ["Cardiac Arrhythmia"],
+          "medications": ["Metoprolol 25mg", "Aspirin 81mg"]
+        },
+        "admission_date": "2024-01-13",
+        "attending_physician": "Dr. Michael Rodriguez"
+      },
+      {
+        "patient_id": "PT_003",
+        "name": "Sarah Johnson", 
+        "room": "412",
+        "ssn": "456-78-9012",
+        "mrn": "MRN234567890",
+        "dob": "1992-11-30",
+        "phone": "555-456-7890",
+        "address": "789 Elm Street, Chicago, IL 60601",
+        "insurance": {
+          "provider": "United Healthcare",
+          "policy_number": "UHC789012",
+          "group_number": "GRP003"
+        },
+        "vitals": {
+          "blood_pressure": "110/70",
+          "heart_rate": "68 bpm",
+          "temperature": "98.4°F", 
+          "oxygen_saturation": "99%",
+          "last_updated": "2024-01-15T11:00:00Z"
+        },
+        "medical_history": {
+          "allergies": ["None known"],
+          "conditions": ["Pregnancy - 32 weeks"],
+          "medications": ["Prenatal vitamins", "Iron supplement"]
+        },
+        "admission_date": "2024-01-15",
+        "attending_physician": "Dr. Lisa Park"
+      }
+    ]
+  }

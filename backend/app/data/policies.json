@@ -1,0 +1,63 @@
+{
+    "role_policies": {
+      "nursing_group": {
+        "role_name": "Nursing Group",
+        "description": "Nurses and clinical care staff",
+        "allowed_fields": [
+          "patient_id",
+          "name", 
+          "room",
+          "vitals",
+          "medical_history.allergies",
+          "medical_history.medications",
+          "medical_history.conditions",
+          "attending_physician"
+        ],
+        "blocked_fields": [
+          "ssn",
+          "mrn", 
+          "phone",
+          "address",
+          "insurance",
+          "dob"
+        ],
+        "data_sources": ["hospital_records"],
+        "max_patients_per_query": 10
+      },
+      "billing_department": {
+        "role_name": "Billing Department", 
+        "description": "Billing and insurance staff",
+        "allowed_fields": [
+          "patient_id",
+          "name",
+          "room",
+          "ssn",
+          "mrn",
+          "dob", 
+          "insurance",
+          "phone",
+          "address",
+          "admission_date"
+        ],
+        "blocked_fields": [
+          "vitals",
+          "medical_history",
+          "attending_physician"
+        ],
+        "data_sources": ["hospital_records", "jira_tickets"],
+        "max_patients_per_query": 50
+      }
+    },
+    "injection_patterns": [
+      "ignore policies",
+      "ignore all",
+      "system override",
+      "show all patient",
+      "leak all patient",
+      "output all",
+      "bypass security",
+      "disable protection",
+      "admin access",
+      "root access"
+    ]
+  }
